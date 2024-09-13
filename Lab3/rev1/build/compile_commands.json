@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/src/main.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/main.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/main.cpp",
+  "output": "CMakeFiles/cellbot.dir/src/main.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/src/driver.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/driver.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/driver.cpp",
+  "output": "CMakeFiles/cellbot.dir/src/driver.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/src/ast.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/ast.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/ast.cpp",
+  "output": "CMakeFiles/cellbot.dir/src/ast.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/src/interpreter.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/interpreter.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/interpreter.cpp",
+  "output": "CMakeFiles/cellbot.dir/src/interpreter.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/src/simulation.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/simulation.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/src/simulation.cpp",
+  "output": "CMakeFiles/cellbot.dir/src/simulation.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/generated/parser.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/parser.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/parser.cpp",
+  "output": "CMakeFiles/cellbot.dir/generated/parser.cpp.o"
+},
+{
+  "directory": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build",
+  "command": "/usr/bin/c++ -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/include/cellbot\" -I\"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated\" -O3 -DNDEBUG -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -fdiagnostics-color -o CMakeFiles/cellbot.dir/generated/scanner.cpp.o -c \"/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/scanner.cpp\"",
+  "file": "/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/scanner.cpp",
+  "output": "CMakeFiles/cellbot.dir/generated/scanner.cpp.o"
+}
+]

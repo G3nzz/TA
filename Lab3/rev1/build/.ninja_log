@@ -1,0 +1,30 @@
+# ninja log v5
+5	217	1725993378076877427	generated/parser.cpp	f5e7ef281fda4713
+5	17	1725993377876874122	generated/scanner.hpp	d135fc33b4daae15
+5	17	1725993377876874122	generated/scanner.cpp	d135fc33b4daae15
+218	1542	1725993378078877460	CMakeFiles/cellbot.dir/src/ast.cpp.o	fa83d18e2b32948d
+219	2656	1725993378080877493	CMakeFiles/cellbot.dir/generated/parser.cpp.o	2e6630decdbff2ba
+3293	3451	1725993381153928270	cellbot	da1a9da43e8cde82
+217	1558	1725993378077877443	CMakeFiles/cellbot.dir/src/main.cpp.o	9c1969d22615a0a1
+220	1381	1725993378080877493	CMakeFiles/cellbot.dir/generated/scanner.cpp.o	77c7a1881a0885da
+5	217	1725993378076877427	generated/parser.hpp	f5e7ef281fda4713
+219	3293	1725993378079877476	CMakeFiles/cellbot.dir/src/interpreter.cpp.o	12975c5b23d7c374
+218	924	1725993378078877460	CMakeFiles/cellbot.dir/src/driver.cpp.o	e06f8ada8689e7cf
+3	12	1725992278247751530	CMakeFiles/cellbot.dir/src/simulation.cpp.o	576c40585f2e55ab
+36	89	1726003418927823500	generated/scanner.cpp	3ac108270357ef15
+36	89	1726003418927823500	generated/scanner.hpp	3ac108270357ef15
+36	89	1726003418927823500	/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/scanner.cpp	3ac108270357ef15
+36	89	1726003418927823500	/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/scanner.hpp	3ac108270357ef15
+32	203	1726003419042403700	generated/parser.cpp	3567aaff23a8a806
+32	203	1726003419042403700	generated/parser.hpp	3567aaff23a8a806
+32	203	1726003419042403700	/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/parser.cpp	3567aaff23a8a806
+32	203	1726003419042403700	/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/generated/parser.hpp	3567aaff23a8a806
+212	1795	1726003420620471000	CMakeFiles/cellbot.dir/src/driver.cpp.o	ee3c80d0e6910b1b
+216	2166	1726003420993023800	CMakeFiles/cellbot.dir/src/ast.cpp.o	9fb15087769ed32d
+209	2336	1726003421164855200	CMakeFiles/cellbot.dir/src/main.cpp.o	89de77afebbb88c1
+225	2360	1726003421168677100	CMakeFiles/cellbot.dir/generated/scanner.cpp.o	1d64946004195159
+221	3126	1726003421953751100	CMakeFiles/cellbot.dir/generated/parser.cpp.o	d172ec8443aa4d33
+108	1724	1726004209978346300	CMakeFiles/cellbot.dir/src/simulation.cpp.o	6840ea291a2c9af
+101	2610	1726004210867293500	CMakeFiles/cellbot.dir/src/main.cpp.o	89de77afebbb88c1
+89	5754	1726004279228892000	CMakeFiles/cellbot.dir/src/interpreter.cpp.o	d4df7a2d856c5893
+5782	6813	1726004280292361000	cellbot	7bdd4ed4272d31f1

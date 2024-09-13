@@ -1,0 +1,3 @@
+/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/CMakeFiles/cellbot.dir
+/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/soul8/Theory Automata/Lab3/rev1/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,179 @@
+// 0 - unknown/obstacle
+// 1 - free
+// 2 - visited
+massive labyrinth = {
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+    {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+};
+massive exit = {6, 1};
+
+labyrinth = scan(labyrinth);
+print_labyrinth(labyrinth);
+
+while {*_*}[0][0] ~= exit[0] || {*_*}[0][1] ~= exit[1] {
+    explore(labyrinth);
+    labyrinth = scan(labyrinth);
+    print_labyrinth(labyrinth);
+}
+
+void function explore(massive labyrinth) {
+    massive path;
+    loop y = 0 : size labyrinth {
+        path[y] = {};
+        loop x = 0 : size labyrinth[y] {
+            if labyrinth[y][x] == 1 {
+                path[y][x] = 1;
+            }
+            else {
+                path[y][x] = 0;
+            }
+        }
+    }
+
+    boolean done = false;
+    while ~done {
+        massive new_path = path;
+
+        loop y = 0 : size labyrinth {
+            loop x = 0 : size labyrinth[y] {
+                if labyrinth[y][x] == 2 && path[y][x] == 0 {
+                    massive values;
+                    if y > 0 {
+                        if path[y - 1][x] ~= 0 {
+                            values[size values] = path[y - 1][x];
+                        }
+                    }
+                    if y < size labyrinth - 1 {
+                        if path[y + 1][x] ~= 0 {
+                            values[size values] = path[y + 1][x];
+                        }
+                    }
+                    if x > 0 {
+                        if path[y][x - 1] ~= 0 {
+                            values[size values] = path[y][x - 1];
+                        }
+                    }
+                    if x < size labyrinth[y] - 1 {
+                        if path[y][x + 1] ~= 0 {
+                            values[size values] = path[y][x + 1];
+                        }
+                    }
+
+                    if size values {
+                        integer new_value = values[0];
+
+                        loop i = 1 : size values {
+                            if values[i] < new_value {
+                                new_value = values[i];
+                            }
+                        }
+
+                        new_path[y][x] = new_value + 1;
+                    }
+                }
+            }
+        }
+
+        path = new_path;
+
+        massive pos = {*_*}[0];
+        done = path[pos[1]][pos[0]] > 0;
+    }
+
+    integer min_value = 9999;
+    integer min_dir = 0;
+
+    massive pos = {*_*}[0];
+    integer x = pos[0];
+    integer y = pos[1];
+
+    if y > 0 && path[y - 1][x] ~= 0 && path[y - 1][x] < min_value {
+        min_value = path[y - 1][x];
+        min_dir = 0;
+    }
+    if y < size labyrinth - 1 && path[y + 1][x] ~= 0 && path[y + 1][x] < min_value {
+        min_value = path[y + 1][x];
+        min_dir = 2;
+    }
+    if x > 0 && path[y][x - 1] ~= 0 && path[y][x - 1] < min_value {
+        min_value = path[y][x - 1];
+        min_dir = 3;
+    }
+    if x < size labyrinth[0] - 1 && path[y][x + 1] ~= 0 && path[y][x + 1] < min_value {
+        min_value = path[y][x + 1];
+        min_dir = 1;
+    }
+
+    if min_dir == 0 { {^_^}; }
+    if min_dir == 1 { {>_>}; }
+    if min_dir == 2 { {v_v}; }
+    if min_dir == 3 { {<_<}; }
+}
+
+massive function scan(massive labyrinth) {
+    massive cardinals = {^_0;>_0;v_0;<_0};
+    massive position = {*_*}[0];
+
+    labyrinth[position[1]][position[0]] = 2;
+
+    loop dir = 0 : 4 {
+        integer x_shift; integer y_shift;
+
+        if (dir == 0) {
+            x_shift = 0;  y_shift = -1;
+        }
+        if (dir == 1) {
+            x_shift = 1;  y_shift = 0;
+        }
+        if (dir == 2) {
+            x_shift = 0;  y_shift = 1;
+        }
+        if (dir == 3) {
+            x_shift = -1; y_shift = 0;
+        }
+
+        integer x = position[0];
+        integer y = position[1];
+
+        loop dist = 0 : cardinals[dir] {
+            x = x + x_shift;
+            y = y + y_shift;
+
+            if labyrinth[y][x] == 0 {
+                labyrinth[y][x] = 1;
+            }
+        }
+    }
+
+    result = labyrinth;
+}
+
+// a crutch solution to nicely print arrays
+void function print_labyrinth(massive labyrinth) {
+    massive pos = {*_*}[0];
+
+    loop y = 0 : size labyrinth {
+        integer row = 9 * 10^(size labyrinth[y]);
+
+        loop x = 0 : size labyrinth[y] {
+            if x == pos[0] && y == pos[1] {
+            // if false {
+                row = row + 8 * 10^(size labyrinth[y] - x - 1);
+            }
+            else {
+                row = row + labyrinth[y][x] * 10^(size labyrinth[y] - x - 1);
+            }
+        }
+
+        print row;
+    }
+
+    print 0;
+}
+
